@@ -74,10 +74,12 @@ def criar_usuario(usuarios):
 
     print(f"\nUsuário criado com sucesso!")
 
+
 def filtrar_usuarios(cpf, usuarios):
     for usuario in usuarios:
         if usuario["cpf"] == cpf:
             return usuario
+
 
 def criar_conta(AGENCIA, num_conta, usuarios, contas):
     cpf = input(f"\nInforme seu CPF (apenas números): ")
